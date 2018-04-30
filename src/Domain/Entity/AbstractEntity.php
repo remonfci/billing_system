@@ -1,4 +1,5 @@
 <?php
+declare(strict_types=1);
 
 namespace BillingSystem\Invoicer\Domain\Entity;
 
@@ -16,18 +17,18 @@ abstract class AbstractEntity
     protected $id;
 
     /**
-     * @return mixed
+     * @return int
      */
-    public function getId()
+    public function getId(): int
     {
         return $this->id;
     }
 
     /**
-     * @param mixed $id
+     * @param int $id
      * @return $this
      */
-    public function setId($id)
+    public function setId(int $id): AbstractEntity
     {
         $this->id = $id;
         return $this;
