@@ -6,6 +6,7 @@ namespace BillingSystem\Invoicer\Domain\Entity;
 
 /**
  * Customer's entity class
+ *
  * @package BillingSystem\Invoicer\Domain\Entity
  */
 class Customer extends AbstractEntity

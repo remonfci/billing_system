@@ -5,7 +5,8 @@ namespace BillingSystem\Invoicer\Domain\Entity;
 
 
 /**
- * Class Order
+ * Order's entity class
+ *
  * @package BillingSystem\Invoicer\Domain\Entity
  */
 class Order extends AbstractEntity
@@ -42,7 +43,7 @@ class Order extends AbstractEntity
      * @param Customer $customer
      * @return Order
      */
-    public function setCustomer($customer): Order
+    public function setCustomer(Customer $customer): Order
     {
         $this->customer = $customer;
         return $this;
@@ -60,7 +61,7 @@ class Order extends AbstractEntity
      * @param int $orderNumber
      * @return Order
      */
-    public function setOrderNumber($orderNumber): Order
+    public function setOrderNumber(int $orderNumber): Order
     {
         $this->orderNumber = $orderNumber;
         return $this;
@@ -78,7 +79,7 @@ class Order extends AbstractEntity
      * @param string $description
      * @return Order
      */
-    public function setDescription($description): Order
+    public function setDescription(string $description): Order
     {
         $this->description = $description;
     }
@@ -95,7 +96,7 @@ class Order extends AbstractEntity
      * @param int $total
      * @return Order
      */
-    public function setTotal($total): Order
+    public function setTotal(int $total): Order
     {
         $this->total = $total;
     }
