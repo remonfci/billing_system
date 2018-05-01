@@ -1,5 +1,5 @@
 <?php
-use BillingSystem\Invoicer\Domain\Entity\Invoice;
+
 use BillingSystem\Invoicer\Domain\Entity\Order;
 use BillingSystem\Invoicer\Domain\Factory\InvoiceFactory;
 
