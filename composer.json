@@ -3,5 +3,15 @@
     "psr-4": {
       "BillingSystem\\Invoicer\\": ["src/"]
     }
+  },
+  "autoload-dev":
+  {
+    "psr-4": {
+      "BillingSystem\\Invoicer\\": "tests/"
+    }
+  },
+  "require-dev": {
+    "peridot-php/peridot": "^1.19",
+    "peridot-php/leo": "~1.0"
   }
 }

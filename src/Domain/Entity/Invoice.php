@@ -57,6 +57,7 @@ class Invoice extends AbstractEntity
     public function setInvoiceDate(\DateTime $invoiceDate): Invoice
     {
         $this->invoiceDate = $invoiceDate;
+        return $this;
     }
 
     /**
@@ -71,8 +72,9 @@ class Invoice extends AbstractEntity
      * @param int $total
      * @return Invoice
      */
-    public function setTotal(int $total): Invoice
+    public function setTotal($total): Invoice
     {
         $this->total = $total;
+        return $this;
     }
 }

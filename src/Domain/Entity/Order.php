@@ -82,22 +82,24 @@ class Order extends AbstractEntity
     public function setDescription(string $description): Order
     {
         $this->description = $description;
+        return $this;
     }
 
     /**
      * @return int
      */
-    public function getTotal(): int
+    public function getTotal()
     {
         return $this->total;
     }
 
     /**
-     * @param int $total
+     * @param $total
      * @return Order
      */
     public function setTotal(int $total): Order
     {
         $this->total = $total;
+        return $this;
     }
 }
